@@ -5,6 +5,7 @@ const FooterPage: React.FC = () => {
         <>
             <h1>
                 Footer page
+                
             </h1>
         </>
     )

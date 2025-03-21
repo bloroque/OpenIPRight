@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom'
 import './assets/css/App.css'
 import MainAdmin from './plateforme/admin/MainAdmin';
 import { protectedRouteAdmin } from './plateforme/admin/Routes';
+import MainAuth from './plateforme/auth/MainAuth';
+import { routedAuth } from './plateforme/auth/routes';
 
 
 
@@ -10,6 +12,11 @@ const App: React.FC = () => {
   return (
     <>
       <Routes>
+
+        <Route path="/auth" element={<MainAuth/>}>
+          {routedAuth}
+        </Route>
+
         {/* Les routes admin */}
         <Route path="/admin" element={<MainAdmin/>}>
           { protectedRouteAdmin }
@@ -17,7 +24,10 @@ const App: React.FC = () => {
 
         {/* Les routes Expoitant Oeuvre */}
 
+
          {/* Les routes proprietaire Oeuvre */}
+
+
       </Routes>
     </>
   )
