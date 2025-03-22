@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom'
 import './assets/css/App.css'
+import './assets/css/globale.scss'
 import MainAdmin from './plateforme/admin/MainAdmin';
 import { protectedRouteAdmin } from './plateforme/admin/Routes';
 /** */
@@ -10,14 +11,14 @@ import { routedAuth } from './plateforme/auth/routes';
 import { routedExploitant } from './plateforme/exploitant/Routes';
 import MainExploitant from './plateforme/exploitant/MainExploitant';
 
-
-
 const App: React.FC = () => {
   return (
     <>
       <Routes>
 
-        <Route path="/auth" element={<MainAuth/>}>
+        {/* route accès */}
+      
+        <Route path="/" element={<MainAuth/>}>
           {routedAuth}
         </Route>
 

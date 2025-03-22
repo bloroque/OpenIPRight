@@ -141,25 +141,20 @@
   }
 }
 
-/* @mixin box-sizing($box-model) {
+@mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model;
   -moz-box-sizing: $box-model;
   box-sizing: $box-model;
 }
 
-// Modèle de boîte universel
+/*  Modèle de boîte universel */
 *, ::before, ::after {
   @include box-sizing(border-box);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
  /* Styles de base pour le document */
-/* html, body, #root {
+html, body, #root {
   position: relative;
   margin: 0;
   padding: 0;
@@ -168,4 +163,4 @@
   width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
-}  */
+} 

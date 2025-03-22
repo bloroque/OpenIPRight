@@ -1,0 +1,11 @@
+/*====== div-ScrollArea ======*/
+
+#div-ScrollArea {
+    > [data-radix-scroll-area-viewport] {
+        height: 100%;
+        > div {
+            height: 100%; // définir la hauteur à 100%
+        }
+    }
+  }
+  

@@ -4,7 +4,7 @@ import { icons } from 'lucide-react';
 interface LucideIconProps {
   name:string;
   color?: string | null | undefined; 
-  size?: number | null | undefined;
+  size?: string | number | null | undefined;
   className?: string | null | undefined;
   [key: string]: string | number | null | undefined; 
 }

@@ -3,10 +3,11 @@ import React from "react";
 const FooterPage: React.FC = () => {
     return (
         <>
-            <h1>
-                Footer page
-                
-            </h1>
+            <div className="w-full flex justify-center items-center h-5 bg-gray-100">
+                <span className="text-xs">
+                    Footer page
+                </span>
+            </div>
         </>
     )
 }

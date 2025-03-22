@@ -1,16 +1,13 @@
-import React, {  useEffect } from 'react';
-import MainPage from './Layouts/MainPage';
+import React from 'react';
 import { Outlet } from 'react-router-dom';
+import MainAuthPage from './Layouts/MainAuthPage';
 
 const MainAuth: React.FC = () => {
-  useEffect(() => {
-  
-  },[]);
 
   return (
-    <MainPage>
+    <MainAuthPage>
       <Outlet/>
-    </MainPage>
+    </MainAuthPage>
   );
 }
 

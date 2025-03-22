@@ -1,12 +1,9 @@
-import React from "react";
-
 import { SignIn, SignUp } from "../IndexPageAuth";
 
 const routerAuth = [
-    {name: 'auth', display: true, Path: "/auth" , Element: <SignIn />},
-
-    {name: 'signin', Path: '/auth/signin' , Element: <SignIn />},
-    {name: 'signup', Path: '/auth/signup' , Element: <SignUp />},
+    {name: 'auth', display: true, Path: "/" , Element: <SignIn />},
+    {name: 'signin', Path: '/signin' , Element: <SignIn />},
+    {name: 'signup', Path: '/signup' , Element: <SignUp />},
 ];
 
 export {routerAuth};
