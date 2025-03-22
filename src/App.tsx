@@ -5,6 +5,8 @@ import MainAdmin from './plateforme/admin/MainAdmin';
 import { protectedRouteAdmin } from './plateforme/admin/Routes';
 import MainAuth from './plateforme/auth/MainAuth';
 import { routedAuth } from './plateforme/auth/routes';
+import { routedExploitant } from './plateforme/exploitant/Routes';
+import MainExploitant from './plateforme/exploitant/MainExploitant';
 
 
 
@@ -24,6 +26,9 @@ const App: React.FC = () => {
 
         {/* Les routes Expoitant Oeuvre */}
 
+        <Route path="/exploitant" element={<MainExploitant/>}>
+          { routedExploitant }
+        </Route>
 
          {/* Les routes proprietaire Oeuvre */}
 
