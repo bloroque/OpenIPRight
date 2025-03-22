@@ -3,8 +3,10 @@ import { Route, Routes } from 'react-router-dom'
 import './assets/css/App.css'
 import MainAdmin from './plateforme/admin/MainAdmin';
 import { protectedRouteAdmin } from './plateforme/admin/Routes';
+/** */
 import MainAuth from './plateforme/auth/MainAuth';
 import { routedAuth } from './plateforme/auth/routes';
+/** */
 import { routedExploitant } from './plateforme/exploitant/Routes';
 import MainExploitant from './plateforme/exploitant/MainExploitant';
 
