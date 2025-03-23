@@ -1,5 +1,5 @@
 import type React from "react"
-import Icon from "../../components/LucideIcon"
+import Icon from "../../../../components/custom/LucideIcon"
 
 export interface SidebarItem {
   title: string
