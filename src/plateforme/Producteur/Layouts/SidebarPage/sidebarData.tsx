@@ -12,13 +12,13 @@ export const sidebarData: SidebarItem[] = [
   {
     title: "Tableau de bord",
     icon: <Icon name="LayoutDashboard" />,
-    path: "/admin/dashboard",
-    //path: "/admin",
+    path: "/producteur/dashboard",
+
   },
   {
     title: "Modération des œuvres",
     icon: <Icon name="LayoutDashboard" />,
-    path: "/admin/moderation-oeuvres",
+    path: "/producteur/moderation-oeuvres",
   },
   {
     title: "Suivi & Transactions",
@@ -27,23 +27,7 @@ export const sidebarData: SidebarItem[] = [
       {
         title: "Paiements",
         icon: <Icon name="CreditCard" />,
-        path: "/admin/paiements",
-      },
-    ],
-  },
-  {
-    title: "Compte & Utilisateurs",
-    icon: <Icon name="Users" />,
-    submenu: [
-      {
-        title: "Gestion des comptes",
-        icon: <Icon name="UserCog" />,
-        path: "/admin/gestion-comptes",
-      },
-      {
-        title: "Historique",
-        icon: <Icon name="History" />,
-        path: "/admin/historique-connexion",
+        path: "/producteur/paiements",
       },
     ],
   },
@@ -52,14 +36,9 @@ export const sidebarData: SidebarItem[] = [
     icon: <Icon name="Settings" />,
     submenu: [
       {
-        title: "Sous menu",
-        
-        path: "/admin/gestion-comptes",
-      },
-      {
         title: "Rôles & Permission",
         icon: <Icon name="Shield" />,
-        path: "/admin/roles-permissions",
+        path: "/producteur/roles-permissions",
       },
     ],
   },
