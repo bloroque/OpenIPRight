@@ -11,6 +11,10 @@ import { routedAuth } from './plateforme/auth/routes';
 import { routedExploitant } from './plateforme/exploitant/Routes';
 import MainExploitant from './plateforme/exploitant/MainExploitant';
 
+/**Proprietaire */
+import MainProprio from './plateforme/proprietaire/MainProprio';
+import { routedProprio } from './plateforme/proprietaire/Routes';
+
 const App: React.FC = () => {
   return (
     <>
@@ -35,6 +39,10 @@ const App: React.FC = () => {
 
          {/* Les routes proprietaire Oeuvre */}
 
+          {/* Proprietaire */}
+         <Route path="/proprio" element={<MainProprio/>}>
+          { routedProprio }
+        </Route>
 
       </Routes>
     </>
